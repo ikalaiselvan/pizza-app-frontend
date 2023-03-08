@@ -82,12 +82,6 @@ function PizzaMap({ cart, setCart }) {
       }
     }, []);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:4000/pizza")
-  //   .then((res) => res.json())
-  //   .then((data) => setPizzaData(data));
-  // }, []);
-
   return (
     <div className="mainCardContainer">
       {pizzaData.map((e) => (

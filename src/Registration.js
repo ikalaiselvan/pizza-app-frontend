@@ -39,7 +39,7 @@ export function Registration() {
         try {
           event.preventDefault();
           const response = await axios.post(
-            `${process.env.REACT_APP_BASE_URL}/register`,
+            `https://pizza-app-ellg.onrender.com/auth/register`,
             userDetails,
             { withCredentials: true }
           );

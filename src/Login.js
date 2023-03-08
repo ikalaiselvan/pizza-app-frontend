@@ -36,7 +36,7 @@ export function Login() {
         event.preventDefault();
         console.log(process.env.REACT_APP_BASE_URL)
         const response = await axios.post(
-          `${process.env.REACT_APP_BASE_URL}/signin`,
+          `https://pizza-app-ellg.onrender.com/auth/signin`,
           userCred,
           { withCredentials: true }
         );

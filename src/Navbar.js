@@ -19,7 +19,7 @@ export default function Navbar({cart}) {
 
   const handleLogout = async () => {
     const response = await axios.get(
-      `${process.env.REACT_APP_BASE_URL}/logout`,
+      `https://pizza-app-ellg.onrender.com/auth/logout`,
       { userCredentials: true }
     );
     if (response) {

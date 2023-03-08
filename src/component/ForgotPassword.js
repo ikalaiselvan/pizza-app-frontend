@@ -28,7 +28,7 @@ const handleSubmit = async (event) => {
   try {
     event.preventDefault();
     const response = await axios.post(
-      `${process.env.REACT_APP_BASE_URL}/forgotPassword`,
+      `https://pizza-app-ellg.onrender.com/auth/forgotPassword`,
       { email: email },
       { withCredentials: true }
     );

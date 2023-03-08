@@ -40,7 +40,7 @@ const handleRegistration = async (event) => {
     console.log("pizza",process.env.REACT_PIZZA_URL)
     console.log("auth", process.env.REACT_APP_BASE_URL);
     const response = await axios.post(
-      `http://localhost:4001/pizza/create`,
+      `https://pizza-app-ellg.onrender.com/pizza/create`,
       createPizza,
       { withCredentials: true }
     );
