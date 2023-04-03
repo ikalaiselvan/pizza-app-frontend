@@ -13,6 +13,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import API from "./globalApi/globalApi";
 
 
 const theme = createTheme();
@@ -39,7 +40,7 @@ export function Registration() {
         try {
           event.preventDefault();
           const response = await axios.post(
-            `https://pizza-app-ellg.onrender.com/auth/register`,
+            `${API}/auth/register`,
             userDetails,
             { withCredentials: true }
           );

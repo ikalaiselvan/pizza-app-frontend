@@ -3,11 +3,11 @@ export const PizzaData = [
     id: 1,
     name: "Pepper barbique chicken",
     varients: ["small", "medium", "large"],
-    prices: [{
+    prices: {
       small: 200,
       medium: 350,
       large: 400,
-    }],
+    },
 
     category: "nonveg",
     image: "https://th.bing.com/th/id/OIP.gTBpgBflDwRjtg9WTRcgrgHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
@@ -16,11 +16,11 @@ export const PizzaData = [
     id: 2,
     name: "barbique veg",
     varients: ["small", "medium", "large"],
-    prices: [{
+    prices: {
       small: 80,
       medium: 290,
       large: 380,
-    }],
+    },
     category: "nonveg",
     image: "https://th.bing.com/th/id/OIP.gTBpgBflDwRjtg9WTRcgrgHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
     desctiption: "pepper barbecue chicken I Cheese",
@@ -28,11 +28,11 @@ export const PizzaData = [
     id: 3,
     name: "Pepper barbique veg",
     varients: ["small", "medium", "large"],
-    prices: [{
+    prices: {
       small: 130,
       medium: 280,
       large: 490,
-    }],
+    },
     category: "nonveg",
     image: "https://th.bing.com/th/id/OIP.gTBpgBflDwRjtg9WTRcgrgHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
     desctiption: "pepper barbecue chicken I Cheese",
@@ -40,11 +40,11 @@ export const PizzaData = [
     id: 4,
     name: "Pepper chicken",
     varients: ["small", "medium", "large"],
-    prices: [{
+    prices: {
       small: 120,
       medium: 340,
       large: 480,
-    }],
+    },
     category: "nonveg",
     image: "https://th.bing.com/th/id/OIP.gTBpgBflDwRjtg9WTRcgrgHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
     desctiption: "pepper barbecue chicken I Cheese",
@@ -52,11 +52,11 @@ export const PizzaData = [
     id: 5,
     name: "barbique chicken",
     varients: ["small", "medium", "large"],
-    prices: [{
+    prices: {
       small: 20,
       medium: 35,
       large: 40,
-    }],
+    },
     category: "nonveg",
     image: "https://th.bing.com/th/id/OIP.gTBpgBflDwRjtg9WTRcgrgHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
     desctiption: "pepper barbecue chicken I Cheese",
@@ -64,11 +64,11 @@ export const PizzaData = [
     id: 6,
     name: "Pepper veg",
     varients: ["small", "medium", "large"],
-    prices: [{
+    prices: {
       small: 100,
       medium: 300,
       large: 430,
-    }],
+    },
     category: "nonveg",
     image: "https://th.bing.com/th/id/OIP.gTBpgBflDwRjtg9WTRcgrgHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
     desctiption: "pepper barbecue chicken I Cheese",

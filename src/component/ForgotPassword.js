@@ -6,16 +6,11 @@ import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import ForgotPassword from './ForgotPassword';
 
 const theme = createTheme();
 
@@ -28,7 +23,8 @@ const handleSubmit = async (event) => {
   try {
     event.preventDefault();
     const response = await axios.post(
-      `https://pizza-app-ellg.onrender.com/auth/forgotPassword`,
+`https://pizza-app-ellg.onrender.com/auth/forgotPassword`,
+      // `http://localhost:4001/auth/forgotPassword`,
       { email: email },
       { withCredentials: true }
     );
@@ -81,7 +77,6 @@ const handleSubmit = async (event) => {
             >
               Forgot password
             </Button>
-            
           </Box>
         </Box>
         {/* <Copyright sx={{ mt: 8, mb: 4 }} /> */}

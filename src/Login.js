@@ -16,13 +16,14 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import API from "./globalApi/globalApi";
 
 const theme = createTheme();
 
 export function Login() {
     const [userCred, setUserCred] = useState({ email: "", password: "" });
     const navigate = useNavigate();
-    console.log(process.env.REACT_APP_BASE_URL)
+    // console.log(process.env.REACT_APP_BASE_URL);
 
     const handleCred = (value) => {
       console.log(value)
@@ -34,17 +35,18 @@ export function Login() {
     const handleLogin = async (event) => {
       try {
         event.preventDefault();
-        console.log(process.env.REACT_APP_BASE_URL)
         const response = await axios.post(
-          `https://pizza-app-ellg.onrender.com/auth/signin`,
+          `${API}/auth/signin`,
           userCred,
           { withCredentials: true }
         );
         if (response) {
+          console.log(response.data.message);
+          localStorage.setItem("ifLogin", true);
           navigate("/pizza");
         }
       } catch (error) {
-        console.log("Error: ", error);
+        alert( `Error : ${error.response.data.message}`);
       }
     };
 

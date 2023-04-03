@@ -11,6 +11,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
+import API from "./globalApi/globalApi";
 
 
 export default function Navbar({cart}) {
@@ -18,15 +19,26 @@ export default function Navbar({cart}) {
   const [cookie, setCookie, removeCookie] = useCookies(["accessToken"]);
 
   const handleLogout = async () => {
-    const response = await axios.get(
-      `https://pizza-app-ellg.onrender.com/auth/logout`,
-      { userCredentials: true }
-    );
+    window.localStorage.setItem("ifLogin", false);
+    const response = await axios.get(`${API}/auth/logout`, {
+      userCredentials: true,
+    });
     if (response) {
-      removeCookie("accessToken");
+      // removeCookie("accessToken");
       navigate("/login");
     }
   };
+
+
+  // const handleLogout = async () => {
+  //   const response = await axios.get(`${API}/auth/logout`, {
+  //     userCredentials: true,
+  //   });
+  //   if (response) {
+  //     removeCookie("accessToken");
+  //     navigate("/login");
+  //   }
+  // };
 
   // console.log(cart.length)
   return (
