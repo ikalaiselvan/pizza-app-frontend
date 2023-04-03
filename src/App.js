@@ -49,9 +49,9 @@ function App() {
         <Route
           path="/pizza"
           element={
-            <ProtectComponent>
+            // <ProtectComponent>
               <PizzaMap cart={cart} setCart={setCart} />
-            </ProtectComponent>
+            // </ProtectComponent>
           }
         />
         <Route
