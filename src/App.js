@@ -36,7 +36,6 @@ function App() {
   return (
     <div className="app">
       <Navbar cart={cart} />
-      <h1>Welcome to pizza app</h1>
       {/* <Routes>
         <Route path="/register" element={<Registration />} />
         <Route path="/login" element={<Login />} />
