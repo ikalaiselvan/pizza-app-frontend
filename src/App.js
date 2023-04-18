@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 import { Cart } from "./Cart";
 import { useState } from "react";
 import Cookies from "js-cookie";
-import  ProtectedRouter  from "./component/Protected";
+// import  ProtectedRouter  from "./component/Protected";
 import CreatePizza from "./component/CreatePizza";
 import { ForgotPass } from './component/ForgotPassword';
 import { ResetPassword } from "./component/ResetPass";
@@ -62,9 +62,9 @@ function App() {
         <Route
           path="/create-pizza"
           element={
-            <ProtectComponent>
+            // <ProtectComponent>
               <CreatePizza />
-            </ProtectComponent>
+            // </ProtectComponent>
           }
         />
         <Route path="/forgot-password" element={<ForgotPass />} />
